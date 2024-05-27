@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+body , header , footer{
+    overflow-x: hidden;
+}
 .navbar {
     font-family: 'Montserrat', sans-serif;
 }
@@ -32,11 +35,25 @@
 .point-red{
     display: block;
     background-color: #AC0000;
-    height: 40px;
-    width: 40px;
     border-radius: 50%;
+    position: absolute;
 }
 
+
+.point-blue{
+    display: block;
+    background-color: #0066C5;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.oval-blue{
+    display: block;
+    background-color: #0066C5;
+    border-radius: 60px;
+    position: absolute;
+}
 
 .hamburger{
     display: none;
@@ -97,4 +114,118 @@
         cursor: pointer;
     }
     
+}
+
+/*header part*/
+
+h1 span{
+    font-size: 3.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    animation: titleAnim 1s ease;
+}
+
+
+@keyframes titleAnim{
+    0%{
+        margin-left: -8rem;
+    }
+    100%{
+        margin-left: 0rem;
+    }
+    
+}
+
+
+
+.subtitle{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.more{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #0066C5;
+}
+
+.cheveron{
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #0066C5;
+    padding: 0.3rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    animation: animCheveron 4s infinite;
+    transition: all 0.5s ease;
+}
+
+
+@keyframes animCheveron{
+    0%{
+        margin-left: 1rem;
+    }
+    50%{
+        margin-left: 1.5rem;
+    }
+    100%{
+        margin-left: 1rem;
+    }
+    
+}
+
+.flocon{
+    opacity: 0.03;
+    height: 550px;
+    z-index: 0;
+    transform: rotate(80deg);
+    pointer-events: none;
+}
+
+.f1{
+    right: 500px;
+    top: 95px;
+    z-index: 0;
+}
+
+
+.personnage {
+   margin-top: -6rem;
+}
+
+.red1{
+    right: 576px;
+    height: 35px;
+    width: 35px;
+}
+
+.red2{
+    right: 36px;
+    top: 40px;
+    height: 20px;
+    width: 20px;
+}
+
+.blue1{
+    right: 292px;
+    top: 608px;
+    height: 20px;
+    width: 20px;
+}
+
+
+
+.blue2{
+    right: -50px;
+    top: 250px;
+    height: 250px; 
+    width: 80px;
+    transform: rotate(35deg);
+}
+
+.rge img{
+    height: 110px;
+    margin-left: -3rem;
 }

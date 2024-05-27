@@ -137,6 +137,14 @@ ul{
     margin-top: 4rem;
 }
 
+.mt-5{
+    margin-top: 5rem;
+}
+
+.mt-6{
+    margin-top: 6rem;
+}
+
 .ml-1{
     margin-left: 1rem;
 }
@@ -391,4 +399,16 @@ ul{
 
 .hidden{
     display: none;
+}
+
+.bleu{
+    color: #005796;
+}
+
+.skyblue{
+    color : #7CC8FF;
+}
+
+.skyred{
+    color : #AC0000;
 }
