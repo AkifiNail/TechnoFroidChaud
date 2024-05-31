@@ -55,6 +55,14 @@ body , header , footer{
     position: absolute;
 }
 
+
+.oval-red{
+    display: block;
+    background-color: #AC0000;
+    border-radius: 60px;
+    position: absolute;
+}
+
 .hamburger{
     display: none;
     z-index: 1000;
@@ -316,4 +324,144 @@ h1 span{
     color: #222222;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+}
+
+
+
+.hot-subtitle{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 7px;
+    color: #AC0000;
+}
+
+.hot-title{
+    font-size: 2.4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.hot-p{
+    width: 70%;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hot-btn{
+    color: white;
+    padding: 0.8rem;
+    background-color: #AC0000;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.5s ease;
+    width: 30%;
+    font-weight: 500;
+}
+
+.hot-btn:hover{
+    background-color: #810101;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.img-thermo{
+    height: 600px;
+    right: 33rem;
+}
+
+.img-chaleur{
+    height: 450px;
+}
+
+.img-chaudiere{
+    height: 350px;
+}
+
+.red4{
+    right: 256px;
+    top: 0px;
+    height: 30px;
+    width: 30px;
+    z-index: 3;
+}  
+
+.red5{
+    right: 600px;
+    top: 450px;
+    height: 20px;
+    width: 20px;
+    z-index: 3;
+}  
+
+.red6{
+    left: -100px;
+    top: -40px;
+    height: 250px; 
+    width: 80px;
+    transform: rotate(35deg);
+}
+
+
+.stats-title{
+    display: block;
+    font-size: 2.4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #0066C5;
+    text-align: right ;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;  
+    padding: 1rem 3rem;
+}
+
+
+.f2{
+    left: -180px;
+    top: -80px;
+}
+
+
+.stats-title-content{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.blue7{
+    right: 450px;
+    top: 20px;
+    height: 30px;
+    width: 30px;
+    z-index: 3;
+}
+
+.number{
+    font-size: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #0066C5;
+}
+
+.stats-subtitle{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.border-left{
+    border-right: 4px solid #c5c5c5;
+    padding-right: 4rem;
+}
+
+.plus{
+    font-size: 5rem;
+    color: #0066C5;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
 }
