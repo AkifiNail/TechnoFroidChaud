@@ -2,6 +2,7 @@
 
 body , header , footer{
     overflow-x: hidden;
+    width: 100vw;
 }
 .navbar {
     font-family: 'Montserrat', sans-serif;
@@ -465,3 +466,403 @@ h1 span{
     font-weight: 700;
     font-family: 'Ubuntu', sans-serif;
 }
+
+
+.vent{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 50%;
+}
+
+.vent-p{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    width: 50%;
+}
+
+
+.elicer{
+    transform-origin: 51% 48%;
+    transform: rotate(180deg);
+    animation: rotate 1s infinite linear;
+    position: absolute;
+    pointer-events: none;
+}
+
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+.ventilo{
+    height: 400px;
+    width: 400px;
+    margin-top: -3rem;
+}
+
+
+
+@keyframes trait {
+    0%{
+        opacity: 1;
+        right: 300px;
+    }
+
+    99%{
+        right: 800px;
+    }
+
+    100%{
+        opacity: 0;
+        right: 300px;
+    }
+    
+}
+
+.vent-trait1{
+    height: 0.3px;
+    width: 90px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 180px;
+    right: 340px;
+    animation: trait 2s infinite linear;
+}
+
+.vent-trait2{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 100px;
+    right: 320px;
+    animation: trait 2s infinite linear;
+    animation-delay: 1s;
+}
+
+.vent-trait3{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 260px;
+    right: 320px;
+    animation: trait 2s infinite linear;
+    animation-delay: 1.2s;
+}
+
+
+.vent-trait4{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 180px;
+    right: 380px;
+    animation: trait 2s infinite linear;
+    animation-delay: 1.4s;
+
+}
+
+
+.vent-trait5{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 140px;
+    right: 310px;
+    animation: trait 2s infinite linear;
+    animation-delay: 1.6s;
+
+}
+
+.vent-trait6{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 220px;
+    right: 310px;
+    animation: trait 2s infinite linear;
+    animation-delay: 1.8s;
+}
+
+
+.vent-trait7{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 160px;
+    right: 380px;
+    animation: trait 2s infinite linear;
+    animation-delay: 2s;
+
+}
+
+
+
+.vent-trait8{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 200px;
+    right: 380px;
+    animation: trait 2s infinite linear;
+    animation-delay: 2.2s;
+
+}
+
+
+.vent-trait9{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 120px;
+    right: 350px;
+    animation: trait 2s infinite linear;
+    animation-delay: 2.4s;
+}
+
+
+.vent-trait10{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 240px;
+    right: 350px;
+    animation: trait 2s infinite linear;
+    animation-delay: 2.6s;
+}
+
+.vent-trait11{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 140px;
+    right: 390px;
+    animation: trait 2s infinite linear;
+    animation-delay: 2.8s;
+}
+
+.vent-trait12{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 220px;
+    right: 390px;
+    animation: trait 2s infinite linear;
+    animation-delay: 3s;
+}
+
+.vent-trait13{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 100px;
+    right: 360px;
+    animation: trait 2s infinite linear;
+    animation-delay: 3.2s;
+}
+
+.vent-trait14{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 210px;
+    right: 360px;
+    animation: trait 2s infinite linear;
+    animation-delay: 3.4s;
+}
+
+.vent-trait15{
+    height: 0.3px;
+    width: 40px;
+    background-color: #0066C5;
+    position: absolute;
+    top: 120px;
+    right: 330px;
+    animation: trait 2s infinite linear;
+    animation-delay: 3.6s;
+}
+
+
+.fondu{
+    height: 200px;
+    width: 200px;
+    margin-top: -3rem;
+    background: linear-gradient(to left, rgba(0, 102, 197, 0) 0%, rgba(255, 255, 255, 0.5) 15%, #ffffff 100%);
+    right: 700px;
+    top: 100px;
+}
+
+.fondu2{
+    height: 210px;
+    width: 80px;
+    margin-top: -3rem;
+    background: linear-gradient(to right, rgba(238, 0, 0, 0) 0%, #ffffff 15%, #ffffff 100%);
+    right: 300px;
+    top: 100px;
+}
+
+
+
+.info-carte{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    background-image: url(../images/carte.png);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.form-test{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.form-test::placeholder{
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #2b2b2b; 
+    opacity: 0;
+}
+
+.form-test:focus , .form-test:not(:placeholder-shown){
+    border-bottom: 2px solid #0066C5;
+}
+
+
+.label-form{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #2b2b2b;
+    top: 0rem;
+    transition: all 0.2s ease;
+}
+
+
+.form-test:focus::placeholder{
+    opacity: 1;
+    transition: all 0.2s ease;
+}
+
+
+.form-content{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 550px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    
+}
+
+.form-test:focus ~ .label-form , .form-test:not(:placeholder-shown) ~ .label-form{
+    top: -1.2rem;
+    color: #0066C5;
+    transition: all 0.2s ease;
+}
+
+
+.form-test:not(:focus):invalid:not(:placeholder-shown) {
+    border-bottom: 2px solid #AC0000;
+}
+
+.form-test:not(:focus):invalid:not(:placeholder-shown) ~ .label-form{
+    color: #AC0000;
+}
+
+
+.textareah{
+    height: 200px;
+}
+
+
+
+.form-test2{
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.form-test2:user-valid{
+    border-bottom: 2px solid #0066C5;
+}
+
+
+.form-test2::placeholder{
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #2b2b2b; 
+    opacity: 0;
+}
+
+
+.defaultselec{
+    color: #949494;
+    font-style: italic;
+    top: 0rem;
+    transition: all 0.2s ease;
+}
+
+
+.send{
+    padding: .4rem;
+    background-color: #0066C5;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.send:hover{
+    background-color: #045397;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
+.plane i::before{
+    transform: rotate(24deg);
+    transition: all 0.5s ease;
+    margin-right: .2rem;
+}
+
+
+.send:hover .plane i::before{
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+

@@ -447,3 +447,17 @@ ul{
 .relative{
     position: relative;
 }
+
+
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.bold{
+    font-weight: bold;
+}
