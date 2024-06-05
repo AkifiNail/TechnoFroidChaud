@@ -22,6 +22,40 @@ cross.addEventListener('click', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    let questionContents = document.querySelectorAll('.question-content');
+    let reponses = document.querySelectorAll('.reponse');
+    let cheveronQuestion = document.querySelectorAll('.chev-question');
+
+    questionContents.forEach((questionContent, index) => {
+        questionContent.addEventListener('click', function () {
+            questionContent.classList.toggle("question-open");
+            cheveronQuestion[index].classList.toggle('rotateChev');
+            if (questionContent.classList.contains('question-open')) {
+                setTimeout(() => {
+                    reponses[index].classList.add('op');
+                }, 400);
+            } else {
+                reponses[index].classList.remove('op');
+            }
+        });
+    });
+
+
+
+    if(window.location.search === '?sent') {
+        let success = document.querySelector('.success');
+         success.classList.add('showpopup');
+        setTimeout(() => {
+            success.classList.remove('showpopup');
+        }, 5000);
+
+    }else if(window.location.search === '?notsent') {
+        let error = document.querySelector('.error');
+        error.classList.add('showpopup');
+        setTimeout(() => {
+            error.classList.remove('showpopup');
+        }, 5000);
+    }
     let target = document.querySelector('.target');
     let numbers = document.querySelectorAll('.number');
 

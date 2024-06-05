@@ -866,3 +866,213 @@ h1 span{
     transition: all 0.5s ease;
 }
 
+
+.popup{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: fixed;
+    bottom: 10px;
+    right: -900px;
+    padding: 1rem;
+    z-index: 1000;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.succes{
+    background-color: #28ad00;
+}
+
+.error{
+    background-color: #ff0000;
+}
+
+
+.showpopup{
+    right: 0px;
+    transition: all 0.5s ease;
+}
+
+
+.blue9{
+    left: -40px;
+    top: 0px;
+    height: 250px;
+    width: 80px;
+    transform: rotate(45deg);
+}
+
+.blue10{
+    left: 110px;
+    top: -10px;
+    height: 30px;
+    width: 30px;
+}
+
+.img-thermo2{
+    height: 600px;
+    left: -6rem;
+    top: 4rem;
+    z-index: -1;
+    transform: rotate(307deg);
+}
+
+
+.red10{
+    right: 100px;
+    bottom: 0px;
+    height: 30px;
+    width: 30px;
+}
+
+.red9{
+    right: -30px;
+    top: 360px;
+    height: 250px; 
+    width: 80px;
+    transform: rotate(35deg);
+}
+
+.f3{
+    top: -100px;
+    right: -30px;
+    z-index: -1;
+}
+
+
+.special-blue-1{
+    height: 30px;
+    width: 30px;
+    background-color: #0066C5;
+    border-radius: 50%;
+}
+
+.title-faq{
+    font-size: 2.8rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+.question-content{
+    background-color: rgb(219, 219, 219);
+    padding: 1.3rem;
+    border-radius: 20px;
+    height: 45px;
+    transition: all 0.5s ease;
+}
+
+.question-content h2{
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    padding-left: 0.4rem;
+}
+
+.question-content i{
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #000000;
+}
+
+
+.question-content:hover{
+    cursor: pointer;
+}
+
+
+.question-open {
+    height: 280px;
+    transition: all 0.5s ease;
+}
+
+.reponse{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    top: 4rem;
+    left: 3rem;
+    pointer-events: none;
+    opacity: 0;
+    
+    width: 90%;
+    line-height: 1.4;
+}
+
+.op{
+    opacity: 1 !important;
+    transition: all 0.5s ease;
+}
+
+.rotateChev{
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+}
+
+.bi-chevron-down{
+    transition: all 0.5s ease;
+}
+
+.blue14{
+    right: 70px;
+    top: 300px;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+/*footer*/
+
+footer{
+    border-top: 2px solid #888888;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-footer{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.menu-footer:hover{
+    color: #0066C5;
+    transition: all 0.5s ease;
+}
+
+.social i::before{
+    font-size: 2.1rem;
+}
+
+
+.facebook{
+    color: #3b5998;
+}
+
+.instagram{
+    color: #e4405f;
+}
+
+
+.red14{
+    left: -40px;
+    top: 360px;
+    height: 250px; 
+    width: 80px;
+    transform: rotate(35deg);
+}
+
+.red15{
+    left: 80px;
+    top: 330px;
+    height: 30px;
+    width: 30px;
+}

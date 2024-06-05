@@ -33,6 +33,7 @@ if ($userMail && $userName && $userMessage && $userTel && $userRegion && $userFi
     Message : " . $userMessage;
     $headers = "From: " . $mailNoReply . "\r\n" .
     "Reply-To: " . $userMail . "\r\n" .
+    "Content-Type: text/plain; charset=utf-8" . "\r\n" .
     "X-Mailer: PHP/" . phpversion();
     mail($to, $subject, $message, $headers);
     // renvoie d'un email de confirmation
@@ -46,11 +47,13 @@ if ($userMail && $userName && $userMessage && $userTel && $userRegion && $userFi
     L'équipe Techno Froid Chaud";
     $headers = "From: " . $mailNoReply . "\r\n" .
     "Reply-To: " . $mailNoReply . "\r\n" .
+    "Content-Type: text/plain; charset=utf-8" . "\r\n" .
     "X-Mailer: PHP/" . phpversion();
     mail($to, $subject, $message, $headers);
-    echo "Votre message a bien été envoyé";
+    header('Location: ../../index.html?sent');
+    exit();
 } else {
-    echo "Erreur lors de l'envoi du message";
+    header('Location: ../../index.html?notsent');
 }
 
 
