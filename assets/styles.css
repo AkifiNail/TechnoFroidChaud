@@ -126,6 +126,11 @@ body , header , footer{
     
 }
 
+
+
+
+
+
 /*header part*/
 
 h1 span{
@@ -743,6 +748,7 @@ h1 span{
     border-bottom: 2px solid black;
     outline: none;
     font-family: 'Montserrat', sans-serif;  
+    font-size: 1.3rem;
 }
 
 .form-test::placeholder{
@@ -1025,14 +1031,23 @@ h1 span{
     width: 30px;
 }
 
+.row3{
+    display: flex;
+}
 
+
+.hot-part-text{
+    width: 50%;
+
+}
 
 
 /*footer*/
 
 footer{
-    border-top: 2px solid #888888;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #d8d8d8;
+    /*je veux qye le box shadow soit juste au top du footer*/
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.041);
 }
 
 .menu-footer{
@@ -1076,3 +1091,231 @@ footer{
     height: 30px;
     width: 30px;
 }
+
+
+.header-content{
+    margin-left: 4rem;
+    margin-top: 6rem;
+}
+
+.img-cold-content{
+    margin-left: 2rem;
+}
+
+.cold-text-part{
+    width: 50%;
+}
+
+
+.hot-part{
+    margin-left: 4rem;
+    margin-top: 6rem;
+}
+
+.vent-content{
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+
+
+@media screen and (max-width: 430px){
+    .red2{
+        display: none;
+    }
+
+    .row2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .header-content{
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .fs5{
+        font-size: 2.6rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        width: 15%;
+        margin-top: 4rem;
+        margin-left: -1rem;
+    }
+
+    .blue2 {
+        right: -12px;
+        top: 347px;
+        height: 100px;
+        width: 30px;
+        transform: rotate(35deg);
+    }
+
+    .personnage {
+        margin-top: 5rem;
+        margin-left: -16rem;
+        height: 306px;
+    }
+
+    .more {
+        font-size: 1.3rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #0066C5;
+        margin-top: 6rem;
+    }
+
+
+    .red1 {
+        right: 10px;
+        height: 20px;
+        top: 161px;
+        width: 20px;
+    }
+
+    .blue1 {
+        right: 112px;
+        top: 469px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .rge img{
+        height: 80px;
+    }
+
+    .rge{
+        gap: 20px;
+    }
+
+    .f1{
+        top: 55px;
+        right: -93px;
+        height: 200px;
+    }
+
+    .img-cold-content{
+        margin-left: -1rem;
+    }
+
+    .img-clim{
+        height: 200px;
+        margin-right: -20px;
+    }
+
+    .img-chambre-froide{
+        height: 230px;
+        margin-left: -20px;
+    }
+
+    .logo{
+        height: 70px;
+    }
+    .cold-subtitle{
+        font-size: 1.3rem;
+
+    }
+
+    .cold-text-part {
+        width: 100%;
+        margin-left: -2.5rem;
+    }
+
+    .cold-p{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .cold-list{
+        gap: 30px;
+    }
+
+    .cold-phone{
+        display: none;
+    }
+
+    .cold-phone-number{
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .row3{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    
+    .img-chaleur{
+        height: 250px;
+    }
+
+    .img-chaudiere{
+        height: 200px;
+    }
+    
+    .hot-part{
+        margin-top: 6rem;
+        margin-left: 0;
+    }
+
+    .hot-part-text{
+        width: 100%;
+        margin-left: -1rem;
+    }
+
+    .hot-btn{
+        width: 65%;
+    }
+
+    .red6 {
+        left: -56px;
+        top: -48px;
+        height: 250px;
+        width: 39px;
+        transform: rotate(35deg);
+    }
+
+    .red4 {
+        right: 322px;
+        top: -58px;
+        height: 15px;
+        width: 15px;
+        z-index: 3;
+    }
+
+    .img-thermo {
+        height: 600px;
+        z-index: -1;
+        right: -12rem;
+        top: -5rem;
+    }
+
+    .stats-title {
+        font-size: 1.6rem;
+    }
+
+    .border-left {
+        border-bottom: 4px solid #c5c5c5;
+        border-right: 0;
+        padding-right: 0;
+        padding-bottom: 3rem;
+    }
+
+    .vent{
+        width: 100%;
+    }
+
+    .vent-p{
+        width: 90%;
+    }
+
+    .vent-content{
+        margin-left: 2rem;
+        margin-top: 5rem;
+    }
+
+    
+}
+

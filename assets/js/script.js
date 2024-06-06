@@ -40,10 +40,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+  
+    console.log("avant");
 
-
+    let send = document.querySelector('.send');
+    let form = document.querySelectorAll(".form-test");
+    
+    send.addEventListener('click', function () {
+        let empty = false;
+        form.forEach((input) => {
+            if (input.value === '') {
+                empty = true;
+            }
+        });
+    
+        if (!empty) {
+            setTimeout(() => {
+                send.innerHTML = 'Envoi ...';
+                send.style.background = '#69b7ff'; 
+                send.disabled = true;
+            }, 100);
+        }
+    });
+    
+    console.log("apres");
+    
     if(window.location.search === '?sent') {
-        let success = document.querySelector('.success');
+        let success = document.querySelector('.succes');
          success.classList.add('showpopup');
         setTimeout(() => {
             success.classList.remove('showpopup');
@@ -100,6 +123,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', onScroll);
 });
-
 
 
