@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-body , header , footer{
+body{
     overflow-x: hidden;
-    width: 100vw;
+    box-sizing: border-box;
 }
+
 .navbar {
     font-family: 'Montserrat', sans-serif;
 }
+
 
 .navbar a{
     color: black;
@@ -1305,6 +1307,7 @@ footer{
 
     .vent{
         width: 100%;
+        font-size: 2.3rem;
     }
 
     .vent-p{
@@ -1314,6 +1317,226 @@ footer{
     .vent-content{
         margin-left: 2rem;
         margin-top: 5rem;
+    }
+
+    .f2{
+        height: 246px;
+        top: 0;
+        left: -120px;
+    }
+
+    .elicer{
+        height: 200px;
+        right: 21px;
+        top: 71px;
+    }
+    
+    .fondu2{
+            right: 172px;
+            width: 60px;
+    }
+
+    .vent-trait1{
+        right: 193px;
+    }
+
+    .vent-trait2{
+        right: 193px;
+        top: 130px;
+    }
+
+    .vent-trait3{
+        right: 193px;
+        top: 150px;
+    }
+
+    .vent-trait4{
+        right: 193px;
+    }
+
+    .vent-trait5{
+        right: 193px;
+    }
+
+    .vent-trait6{
+        right: 193px;
+    }
+
+    .vent-trait7{
+        right: 193px;
+    }
+
+    .vent-trait8{
+        right: 193px;
+    }
+
+    .vent-trait9{
+        right: 193px;
+        top: 140px;
+    }
+
+    .vent-trait10{
+        right: 193px;
+        top: 160px;
+    }
+
+    .vent-trait11{
+        right: 193px;
+        top: 140px;
+    }
+
+    .vent-trait12{
+        right: 193px;
+    }
+
+    .vent-trait13{
+        display: none;
+    }
+
+    .vent-trait14{
+        right: 193px;
+    }
+
+
+    @keyframes trait {
+        0%{
+            opacity: 1;
+            right: 193px;
+        }
+    
+        99%{
+            right: 800px;
+        }
+    
+        100%{
+            opacity: 0;
+            right: 193px;
+        }
+        
+    }
+
+    .info-carte{
+        display: none;
+    }
+    
+
+    .form-test{
+        font-size: 0.7rem;
+    }
+
+    .ventilo{
+        height: 297px;
+    }
+
+    .title-contact{
+        font-size: 2.4rem !important;
+    }
+
+    .blue9 {
+        left: -68px;
+        top: 26px;
+        height: 250px;
+        width: 50px;
+        transform: rotate(45deg);
+    }
+
+    .red9 {
+        right: -57px;
+        top: 422px;
+        height: 250px;
+        width: 50px;
+        transform: rotate(35deg);
+    }
+
+    .blue10 {
+        display: none;
+    }
+
+    .red10{
+        display: none;
+    }
+
+    .f3 {
+        top: -104px;
+        right: 241px;
+        z-index: -1;
+        height: 265px;
+    }
+
+    .question-content h2{
+        font-size: 0.9rem;
+        padding-top: 2px;
+    }
+
+    .question-content:nth-child(1) h2 ,   .question-content:nth-child(1) i{
+        padding-top: 13px;
+    }
+
+    .question-content:nth-child(2) h2 ,   .question-content:nth-child(2) i{
+        padding-top: 10px;
+    }
+
+
+
+    .question-content i{
+        font-size: 1.2rem;
+        margin-left: 1rem;
+    }
+    
+    
+    .question-content:nth-child(1) h2{
+        font-size: 0.95rem !important;
+    }
+
+    .reponse{
+        font-size: 0.8rem;
+        top: 2rem;
+        left: 1.5rem;
+        width: 85%;
+    }
+
+    .gap-60-2{
+        gap: 20px;
+    }
+
+    .logo-footer-content{
+        margin-left: -2rem;
+    }
+
+    .menu-footer-content{
+        margin-left: -3rem;
+    }
+
+    .social-footer-content{
+        margin-right: 3rem;
+    }
+
+    .div-content-footer{
+        gap: 20px;
+    }
+
+    .blue14 {
+        right: 15px;
+        top: 320px;
+        height: 20px;
+        width: 20px;
+    }
+
+    .red14 {
+        left: -84px;
+        top: 360px;
+        height: 250px;
+        width: 52px;
+        transform: rotate(35deg);
+    }
+
+    .red15{
+        display: none;
+    }
+    
+    html, body {
+	position:relative;
+	overflow-x:hidden;
     }
 
     

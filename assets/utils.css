@@ -465,3 +465,7 @@ ul{
 .bold{
     font-weight: bold;
 }
+
+.gap-60-2{
+    gap: 60px;
+}
