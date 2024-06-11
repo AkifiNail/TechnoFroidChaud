@@ -20,6 +20,19 @@ cross.addEventListener('click', () => {
 });
 
 
+let nav = document.querySelector('.navpc');
+
+window.addEventListener('scroll', () => { 
+    let scroll = window.scrollY;
+    if(scroll > 100) {
+        nav.classList.add('navbg-scroll');
+    }
+    else if(scroll < 100) {
+            nav.classList.remove('navbg-scroll');
+    }
+});
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     let questionContents = document.querySelectorAll('.question-content');

@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
     box-sizing: border-box;
+}
+
+.navpc{
+    position: fixed;
+    top: 0;
+    z-index: 9999999999999999999;
+    transition: all 0.2s ease;
+}
+
+.navbg-scroll{
+    background-color: #ffffff;
+    width: 100%;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -143,6 +161,10 @@ h1 span{
 }
 
 
+.mt-8-pc{
+    margin-top: 8rem;
+}
+
 @keyframes titleAnim{
     0%{
         margin-left: -8rem;
@@ -203,7 +225,7 @@ h1 span{
 
 .f1{
     right: 500px;
-    top: 95px;
+    top: 120px;
     z-index: 0;
 }
 
@@ -1216,7 +1238,7 @@ footer{
         height: 70px;
     }
     .cold-subtitle{
-        font-size: 1.3rem;
+        font-size: 1rem;
 
     }
 
@@ -1285,6 +1307,10 @@ footer{
         height: 15px;
         width: 15px;
         z-index: 3;
+    }
+
+    .cold-title{
+        font-size: 2rem;
     }
 
     .img-thermo {
@@ -1532,6 +1558,10 @@ footer{
 
     .red15{
         display: none;
+    }
+
+    .mt-8-pc{
+        margin-top: 0rem;
     }
     
     html, body {

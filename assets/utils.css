@@ -176,6 +176,14 @@ ul{
     margin-top: 6rem;
 }
 
+.mt-9{
+    margin-top: 9rem;
+}
+
+.mt-11{
+    margin-top: 11rem;
+}
+
 .ml-1{
     margin-left: 1rem;
 }
@@ -321,6 +329,10 @@ ul{
 
 /**/
 
+.pdt-05{
+    padding-top: 0.5rem;
+}
+
 .pdt-1{
     padding-top: 1rem;
 }
@@ -343,6 +355,10 @@ ul{
 
 .pdt-15{
     padding-top: 15rem;
+}
+
+.pdl-05{
+    padding-left: 0.5rem;
 }
 
 .pdl-1{
