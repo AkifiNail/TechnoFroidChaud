@@ -3,6 +3,43 @@ let navLinks = document.querySelector('.nav-links');
 let cross = document.querySelector('.cross');
 
 
+
+let navLinksItems = document.querySelectorAll('.nav-links a');
+
+let observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        let id = entry.target.getAttribute('id');
+        let navLink = document.querySelector(`a[href="#${id}"]`);
+        if (entry.isIntersecting) {
+            // Ajouter la classe nav_id au lien correspondant à la section visible
+            navLink.classList.add('nav_id');
+        } else {
+            // Supprimer la classe nav_id du lien correspondant à la section non visible
+            navLink.classList.remove('nav_id');
+        }
+    });
+
+    // S'assurer qu'il n'y a qu'un seul lien avec la classe nav_id
+    let visibleEntries = entries.filter(entry => entry.isIntersecting);
+    if (visibleEntries.length > 0) {
+        // Trouver le premier lien de navigation visible
+        let id = visibleEntries[0].target.getAttribute('id');
+        navLinksItems.forEach(link => {
+            if (link.getAttribute('href') !== `#${id}`) {
+                link.classList.remove('nav_id');
+            }
+        });
+    }
+}, {
+    threshold: 0.5  // Ajuster le seuil pour s'assurer qu'au moins 50% de la section est visible
+});
+
+document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+});
+
+
+
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open');
     hamburger.classList.toggle('hiddenRotate');
