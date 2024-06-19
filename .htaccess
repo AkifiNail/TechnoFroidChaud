@@ -1,0 +1,69 @@
+# Activer la réécriture d'URL
+RewriteEngine On
+
+# Rediriger les erreurs 404 vers une page personnalisée
+ErrorDocument 404 /404.html
+
+# Rediriger les erreurs 403 vers une page personnalisée
+ErrorDocument 403 /403.html
+
+# Activer les en-têtes d'expiration
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    # JavaScript
+    ExpiresByType application/javascript "access plus 1 week"
+    ExpiresByType application/x-javascript "access plus 1 week"
+    ExpiresByType text/javascript "access plus 1 week"
+
+    # CSS
+    ExpiresByType text/css "access plus 1 week"
+
+    # Images
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+
+    # Fonts
+    ExpiresByType font/ttf "access plus 1 month"
+    ExpiresByType font/otf "access plus 1 month"
+    ExpiresByType font/woff "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 month"
+</IfModule>
+
+# Activer les en-têtes de cache
+<IfModule mod_headers.c>
+    <FilesMatch "\.(js|css|jpg|jpeg|png|gif|svg|webp|ttf|otf|woff|woff2)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+</IfModule>
+
+# Redirection www vers non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+# Redirection HTTP vers HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Options de sécurité
+<IfModule mod_headers.c>
+    # Prévenir le Clickjacking
+    Header always append X-Frame-Options SAMEORIGIN
+    # Prévenir les attaques XSS
+    Header set X-XSS-Protection "1; mode=block"
+    # Prévenir la sniffing de MIME type
+    Header set X-Content-Type-Options nosniff
+    # Activer HSTS
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# Gérer les erreurs 404 et 403
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /404.html [L]
+</IfModule>
